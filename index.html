@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="SpendWise personal finance dashboard">
+
+    <title>SpendWise | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">S</span>
+                <h2>SpendWise</h2>
+            </div>
+
+            <p class="menu-title">MAIN MENU</p>
+
+            <nav class="navigation" aria-label="Main navigation">
+
+                <a href="#" class="nav-link active" aria-current="page">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>💳</span> Transactions
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>📊</span> Analytics
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>🎯</span> Budgets
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>⚙️</span> Settings
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Personal Finance</p>
+                <h4>Manage your money wisely.</h4>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div class="header-title">
+                    <h1>Dashboard</h1>
+                    <p>Welcome back! Here's your financial overview.</p>
+                </div>
+
+                <div class="header-actions">
+
+                    <button class="notification" aria-label="Notifications">
+                        🔔
+                    </button>
+
+                    <div class="profile">
+
+                        <div class="avatar">AI</div>
+
+                        <div>
+                            <h4>Ayub Ibrahim</h4>
+                            <p>Personal Account</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- FINANCIAL OVERVIEW -->
+            <section class="overview">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Financial Overview</h2>
+                        <p>Track your income and expenses.</p>
+                    </div>
+
+                    <span class="date-label">November 2026</span>
+
+                </div>
+
+
+                <!-- SUMMARY CARDS -->
+                <div class="summary-grid">
+
+                    <article class="summary-card" tabindex="0">
+
+                        <div class="card-top">
+                            <span>Total Balance</span>
+                            <span class="card-icon blue">💰</span>
+                        </div>
+
+                        <h2>KES 85,000</h2>
+                        <p class="positive">Available balance</p>
+
+                    </article>
+
+
+                    <article class="summary-card" tabindex="0">
+
+                        <div class="card-top">
+                            <span>Total Income</span>
+                            <span class="card-icon green">📈</span>
+                        </div>
+
+                        <h2>KES 120,000</h2>
+                        <p class="positive">Monthly income</p>
+
+                    </article>
+
+
+                    <article class="summary-card" tabindex="0">
+
+                        <div class="card-top">
+                            <span>Total Expenses</span>
+                            <span class="card-icon red">📉</span>
+                        </div>
+
+                        <h2>KES 35,000</h2>
+                        <p class="negative">Monthly expenses</p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- EXPENSE CATEGORIES -->
+            <section class="categories">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Expense Categories</h2>
+                        <p>See how your money is being spent.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <!-- FOOD -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="card-top">
+                            <div class="category-icon food">🍔</div>
+                            <span class="percentage">20%</span>
+                        </div>
+
+                        <h3>Food</h3>
+                        <h2>KES 7,000</h2>
+                        <p>Monthly spending</p>
+
+                        <div class="progress-bar">
+                            <div class="progress food-progress"></div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TRANSPORT -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="card-top">
+                            <div class="category-icon transport">🚗</div>
+                            <span class="percentage">10%</span>
+                        </div>
+
+                        <h3>Transport</h3>
+                        <h2>KES 3,500</h2>
+                        <p>Monthly spending</p>
+
+                        <div class="progress-bar">
+                            <div class="progress transport-progress"></div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- RENT -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="card-top">
+                            <div class="category-icon rent">🏠</div>
+                            <span class="percentage">40%</span>
+                        </div>
+
+                        <h3>Rent</h3>
+                        <h2>KES 14,000</h2>
+                        <p>Monthly spending</p>
+
+                        <div class="progress-bar">
+                            <div class="progress rent-progress"></div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- ENTERTAINMENT -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="card-top">
+                            <div class="category-icon entertainment">🎮</div>
+                            <span class="percentage">8%</span>
+                        </div>
+
+                        <h3>Entertainment</h3>
+                        <h2>KES 2,800</h2>
+                        <p>Monthly spending</p>
+
+                        <div class="progress-bar">
+                            <div class="progress entertainment-progress"></div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- SAVINGS -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="card-top">
+                            <div class="category-icon savings">💎</div>
+                            <span class="percentage">12%</span>
+                        </div>
+
+                        <h3>Savings</h3>
+                        <h2>KES 4,200</h2>
+                        <p>Monthly savings</p>
+
+                        <div class="progress-bar">
+                            <div class="progress savings-progress"></div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- UTILITIES -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="card-top">
+                            <div class="category-icon utilities">💡</div>
+                            <span class="percentage">10%</span>
+                        </div>
+
+                        <h3>Utilities</h3>
+                        <h2>KES 3,500</h2>
+                        <p>Monthly spending</p>
+
+                        <div class="progress-bar">
+                            <div class="progress utilities-progress"></div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT ACTIVITY -->
+            <section class="activity">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Recent Activity</h2>
+                        <p>Your latest financial activities.</p>
+                    </div>
+                </div>
+
+
+                <div class="activity-card">
+
+                    <div class="activity-item">
+
+                        <span>🍔</span>
+
+                        <div>
+                            <h4>Food Shopping</h4>
+                            <p>November 08, 2026</p>
+                        </div>
+
+                        <strong>- KES 2,000</strong>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <span>🚗</span>
+
+                        <div>
+                            <h4>Transport</h4>
+                            <p>November 07, 2026</p>
+                        </div>
+
+                        <strong>- KES 500</strong>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <span>💰</span>
+
+                        <div>
+                            <h4>Monthly Income</h4>
+                            <p>November 05, 2026</p>
+                        </div>
+
+                        <strong class="income">+ KES 20,000</strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+
+                <p>© 2026 SpendWise. All rights reserved.</p>
+
+                <p>Manage your money wisely.</p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
